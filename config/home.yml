@@ -1,0 +1,91 @@
+- name: AndyL
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: rss
+          limit: 10
+          collapse-after: 3
+          cache: 12h
+          feeds:
+            - url: https://duckdb.org/feed.xml
+              title: DuckDB Blog
+            - url: https://seattledataguy.substack.com/feed
+              title: Seattle Data Guy
+            - url: https://github.blog/feed/
+              title: Github Blogs
+            - url: https://realpython.com/atom.xml
+            - url: https://simonwillison.net/atom/everything/
+              title: Simon Willison
+
+        - type: rss
+          title: Builder Radar
+          limit: 6
+          collapse-after: 3
+          cache: 12h
+          feeds:
+            - url: https://simonwillison.net/atom/everything/
+              title: Simon Willison
+            - url: https://github.com/duckdb/duckdb/releases.atom
+              title: DuckDB Releases
+            - url: https://github.blog/changelog/feed/
+              title: GitHub Changelog
+
+    - size: full
+      widgets:
+        - type: search
+          search-engine: google
+
+        - type: videos
+          channels:
+            - UC--JW6Yuho7UIbEzJNRk8cA # SherenDev
+            - UCq6VFHwMzcMXbuKyG7SQYIg # Penguinz0
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UCO7dBj4bwaDOMoX-kKYF2Ww # Atozy
+            - UCVhQ2NnY5Rskt6UjCUkJ_DA # Arjun Codes
+            - UCCezIgC97PvUuR4_gbFUs5g # Corey Schafer
+            - UCuudpdbKmQWq2PPzYgVCWlA # Indently
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: vancouver
+              show-thumbnails: true
+            - type: reddit
+              subreddit: worldnews
+              show-thumbnails: true
+
+        - type: to-do
+          id: today
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Vancouver, Canada
+          units: metric
+          hour-format: 12h
+          hide-location: false
+
+        - type: markets
+          markets:
+            - symbol: SPY
+              name: S&P 500
+            - symbol: BTC-CAD
+              name: Bitcoin
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: BABA
+              name: Alibaba
+            - symbol: AAPL
+              name: Apple
+            - symbol: MSFT
+              name: Microsoft
+            - symbol: AMZN
+              name: Amazon
+            - symbol: GOOG
+              name: Alphabet
+            - symbol: LULU
+              name: Lululemon
+
