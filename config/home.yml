@@ -17,8 +17,8 @@
             - url: https://github.blog/feed/
               title: Github Blogs
             - url: https://realpython.com/atom.xml
-            - url: https://simonwillison.net/atom/everything/
-              title: Simon Willison
+            - url: https://www.oreilly.com/radar/feed.xml
+              title: Oreilly Radar
 
         - type: rss
           title: Builder Radar
@@ -26,8 +26,7 @@
           collapse-after: 3
           cache: 12h
           feeds:
-            - url: https://simonwillison.net/atom/everything/
-              title: Simon Willison
+            - url: https://dev.to/feed
             - url: https://github.com/duckdb/duckdb/releases.atom
               title: DuckDB Releases
             - url: https://github.blog/changelog/feed/
