@@ -35,7 +35,7 @@
     - size: full
       widgets:
         - type: search
-          search-engine: google
+          search-engine: duckduckgo
 
         - type: videos
           channels:
